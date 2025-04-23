@@ -1,23 +1,26 @@
-programa {  inclua biblioteca Matematica--> mat
-
+programa {
   funcao inicio() {
     
-    real a,b,soma
+    inteiro valor20,valor90,valor
 
-    escreva("digite o valor de A: ")
-    leia(a)
+    escreva("Digite um valor entre 20 e 90: ")
+    leia(valor)
 
-    escreva("digite o valor de B:")
-    leia(b)
-  
-    soma = (a+b)
-    escreva("X é igual a: "+soma)
 
-    se(soma>10){
-   escreva("incorreto")}
+      //verificar se o valor está entre 20 e 90
 
-   se(soma<10)
-   escreva("correto")
+     se((valor < valor20) ou (valor > valor90))
+
+    escreva("O valor está fora da faixa permitida")
+
+    senao se((valor==valor20) ou (valor==90))
+
+    escreva("O valor está na faixa permitida")
+
+    
+
+
+
 
 
 
